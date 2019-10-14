@@ -13,7 +13,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import java.util.*;
 
 public class MyGdxGame extends ApplicationAdapter {
-	int radius = 64;
+    int radius = 64;
     ArrayList<Pixel> pixelList;
 
     int levelX = 0, levelY = 0;
@@ -30,9 +30,9 @@ public class MyGdxGame extends ApplicationAdapter {
     Pixmap pic;
 
     @Override
-	public void create ()
+    public void create ()
     {
-		batch = new SpriteBatch();
+	batch = new SpriteBatch();
         shapeRenderer = new ShapeRenderer();
         level = new Texture("testlevel5.png");
         win = new Texture("winner.png");
@@ -43,10 +43,10 @@ public class MyGdxGame extends ApplicationAdapter {
         pixelList = buildCircleList(radius);
 
         pic = new Pixmap(Gdx.files.internal("testlevel5.png"));
-	}
+    }
 
-	@Override
-	public void render ()
+    @Override
+    public void render ()
     {
         Gdx.gl.glClearColor(1,0,0,1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
@@ -89,7 +89,7 @@ public class MyGdxGame extends ApplicationAdapter {
         {
             update();
         }
-   	}
+   }
 
     public String checkWinner()
     {
