@@ -156,24 +156,24 @@ public class MyGdxGame extends ApplicationAdapter {
         pixels.add(new Pixel(0, -radius));
 
         //first
-        pixels.add(new Pixel ((int) (radius*Math.cos((Math.PI)/8)), (int) (radius*Math.sin((Math.PI)/8))));
-        pixels.add(new Pixel ((int) (radius*Math.cos((Math.PI)/4)), (int) (radius*Math.sin((Math.PI)/4))));
-        pixels.add(new Pixel ((int) (radius*Math.cos(3*(Math.PI)/8)), (int) (radius*Math.sin(3*(Math.PI)/8))));
+        pixels.add(new Pixel ((int) (radius * Math.cos(    (Math.PI) / 8)), (int) (radius*Math.sin(    (Math.PI) / 8))));
+        pixels.add(new Pixel ((int) (radius * Math.cos(    (Math.PI) / 4)), (int) (radius*Math.sin(    (Math.PI) / 4))));
+        pixels.add(new Pixel ((int) (radius * Math.cos(3 * (Math.PI) / 8)), (int) (radius*Math.sin(3 * (Math.PI) / 8))));
 
         //second quadrant
-        pixels.add(new Pixel ((int) (-radius*Math.cos((Math.PI)/8)), (int) (radius*Math.sin((Math.PI)/8))));
-        pixels.add(new Pixel ((int) (-radius*Math.cos((Math.PI)/4)), (int) (radius*Math.sin((Math.PI)/4))));
-        pixels.add(new Pixel ((int) (-radius*Math.cos(3*(Math.PI)/8)), (int) (radius*Math.sin(3*(Math.PI)/8))));
+        pixels.add(new Pixel ((int) (-radius * Math.cos(    (Math.PI) / 8)), (int) (radius*Math.sin(    (Math.PI) / 8))));
+        pixels.add(new Pixel ((int) (-radius * Math.cos(    (Math.PI) / 4)), (int) (radius*Math.sin(    (Math.PI) / 4))));
+        pixels.add(new Pixel ((int) (-radius * Math.cos(3 * (Math.PI) / 8)), (int) (radius*Math.sin(3 * (Math.PI) / 8))));
 
         //third quadrant
-        pixels.add(new Pixel ((int) (-radius*Math.cos((Math.PI)/8)), (int) (-radius*Math.sin((Math.PI)/8))));
-        pixels.add(new Pixel ((int) (-radius*Math.cos((Math.PI)/4)), (int) (-radius*Math.sin((Math.PI)/4))));
-        pixels.add(new Pixel ((int) (-radius*Math.cos(3*(Math.PI)/8)), (int) (-radius*Math.sin(3*(Math.PI)/8))));
+        pixels.add(new Pixel ((int) (-radius * Math.cos(    (Math.PI) / 8)), (int) (-radius*Math.sin(    (Math.PI) / 8))));
+        pixels.add(new Pixel ((int) (-radius * Math.cos(    (Math.PI) / 4)), (int) (-radius*Math.sin(    (Math.PI) / 4))));
+        pixels.add(new Pixel ((int) (-radius * Math.cos(3 * (Math.PI) / 8)), (int) (-radius*Math.sin(3 * (Math.PI) / 8))));
 
         //fourth quadrant
-        pixels.add(new Pixel ((int) (radius*Math.cos((Math.PI)/8)), (int) (-radius*Math.sin((Math.PI)/8))));
-        pixels.add(new Pixel ((int) (radius*Math.cos((Math.PI)/4)), (int) (-radius*Math.sin((Math.PI)/4))));
-        pixels.add(new Pixel ((int) (radius*Math.cos(3*(Math.PI)/8)), (int) (-radius*Math.sin(3*(Math.PI)/8))));
+        pixels.add(new Pixel ((int) (radius * Math.cos(    (Math.PI) / 8)), (int) (-radius*Math.sin(    (Math.PI) / 8))));
+        pixels.add(new Pixel ((int) (radius * Math.cos(    (Math.PI) / 4)), (int) (-radius*Math.sin(    (Math.PI) / 4))));
+        pixels.add(new Pixel ((int) (radius * Math.cos(3 * (Math.PI) / 8)), (int) (-radius*Math.sin(3 * (Math.PI) / 8))));
 
         for(Pixel p:pixels)
         {
