@@ -120,7 +120,7 @@ public class MyGdxGame extends ApplicationAdapter {
         }
         if (Gdx.input.getRoll() >= 0)
         {
-            levelX += (int) (v * Math.sin(Math.toRadians(Gdx.input.getPitch())));
+            levelX += (int) ( v * Math.sin(Math.toRadians(Gdx.input.getPitch())));
             levelY += (int) (-v * Math.cos(Math.toRadians(Gdx.input.getPitch())));
         }
         else
@@ -150,32 +150,32 @@ public class MyGdxGame extends ApplicationAdapter {
         ArrayList<Pixel> pixels = new ArrayList<Pixel>();
 
         //corner things
-        pixels.add(new Pixel(radius, 0));
+        pixels.add(new Pixel( radius, 0));
         pixels.add(new Pixel(-radius, 0));
-        pixels.add(new Pixel(0, radius));
+        pixels.add(new Pixel(0,  radius));
         pixels.add(new Pixel(0, -radius));
 
         //first
-        pixels.add(new Pixel ((int) (radius * Math.cos(    (Math.PI) / 8)), (int) (radius*Math.sin(    (Math.PI) / 8))));
-        pixels.add(new Pixel ((int) (radius * Math.cos(    (Math.PI) / 4)), (int) (radius*Math.sin(    (Math.PI) / 4))));
-        pixels.add(new Pixel ((int) (radius * Math.cos(3 * (Math.PI) / 8)), (int) (radius*Math.sin(3 * (Math.PI) / 8))));
+        pixels.add(new Pixel ((int) (radius * Math.cos(    (Math.PI) / 8)), (int) (radius * Math.sin(    (Math.PI) / 8))));
+        pixels.add(new Pixel ((int) (radius * Math.cos(    (Math.PI) / 4)), (int) (radius * Math.sin(    (Math.PI) / 4))));
+        pixels.add(new Pixel ((int) (radius * Math.cos(3 * (Math.PI) / 8)), (int) (radius * Math.sin(3 * (Math.PI) / 8))));
 
         //second quadrant
-        pixels.add(new Pixel ((int) (-radius * Math.cos(    (Math.PI) / 8)), (int) (radius*Math.sin(    (Math.PI) / 8))));
-        pixels.add(new Pixel ((int) (-radius * Math.cos(    (Math.PI) / 4)), (int) (radius*Math.sin(    (Math.PI) / 4))));
-        pixels.add(new Pixel ((int) (-radius * Math.cos(3 * (Math.PI) / 8)), (int) (radius*Math.sin(3 * (Math.PI) / 8))));
+        pixels.add(new Pixel ((int) (-radius * Math.cos(    (Math.PI) / 8)), (int) (radius * Math.sin(    (Math.PI) / 8))));
+        pixels.add(new Pixel ((int) (-radius * Math.cos(    (Math.PI) / 4)), (int) (radius * Math.sin(    (Math.PI) / 4))));
+        pixels.add(new Pixel ((int) (-radius * Math.cos(3 * (Math.PI) / 8)), (int) (radius * Math.sin(3 * (Math.PI) / 8))));
 
         //third quadrant
-        pixels.add(new Pixel ((int) (-radius * Math.cos(    (Math.PI) / 8)), (int) (-radius*Math.sin(    (Math.PI) / 8))));
-        pixels.add(new Pixel ((int) (-radius * Math.cos(    (Math.PI) / 4)), (int) (-radius*Math.sin(    (Math.PI) / 4))));
-        pixels.add(new Pixel ((int) (-radius * Math.cos(3 * (Math.PI) / 8)), (int) (-radius*Math.sin(3 * (Math.PI) / 8))));
+        pixels.add(new Pixel ((int) (-radius * Math.cos(    (Math.PI) / 8)), (int) (-radius * Math.sin(    (Math.PI) / 8))));
+        pixels.add(new Pixel ((int) (-radius * Math.cos(    (Math.PI) / 4)), (int) (-radius * Math.sin(    (Math.PI) / 4))));
+        pixels.add(new Pixel ((int) (-radius * Math.cos(3 * (Math.PI) / 8)), (int) (-radius * Math.sin(3 * (Math.PI) / 8))));
 
         //fourth quadrant
-        pixels.add(new Pixel ((int) (radius * Math.cos(    (Math.PI) / 8)), (int) (-radius*Math.sin(    (Math.PI) / 8))));
-        pixels.add(new Pixel ((int) (radius * Math.cos(    (Math.PI) / 4)), (int) (-radius*Math.sin(    (Math.PI) / 4))));
-        pixels.add(new Pixel ((int) (radius * Math.cos(3 * (Math.PI) / 8)), (int) (-radius*Math.sin(3 * (Math.PI) / 8))));
+        pixels.add(new Pixel ((int) (radius * Math.cos(    (Math.PI) / 8)), (int) (-radius * Math.sin(    (Math.PI) / 8))));
+        pixels.add(new Pixel ((int) (radius * Math.cos(    (Math.PI) / 4)), (int) (-radius * Math.sin(    (Math.PI) / 4))));
+        pixels.add(new Pixel ((int) (radius * Math.cos(3 * (Math.PI) / 8)), (int) (-radius * Math.sin(3 * (Math.PI) / 8))));
 
-        for(Pixel p:pixels)
+        for(Pixel p : pixels)
         {
             p.x += 1920/2 - levelX;
             p.y += 1080/2 + (level.getHeight() - 1080) + levelY;
